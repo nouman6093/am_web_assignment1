@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://img.icons8.com/ultraviolet/40/drama.png" type="image/png">
+</head>
+<title>K-Dramas</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Ensure the body covers the full viewport height */
+    background-color: beige;
+  }
+  body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box; /* Ensure padding does not add to width/height */
+  }
+  .navbar {
+    background-color: #892664;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    height: 60px;
+    z-index: 10; /* Ensure navbar is above slides */
+  }
+  .navbar a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+  .navbar a:hover {
+    background-color: #da339b;
+    color: black;
+  }
+  .footer {
+    background-color: #892664;
+    width: 100%; /* Make sure footer spans the full width */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't add extra width */
+    bottom: 0;
+  }
+  .footer .contact_us {
+    color: #f2f2f2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 35%;
+  }
+  .footer .contact_us .email {
+    display: flex;
+  }
+  .footer .contact_us img {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .footer .contact_us .phone {
+    display: flex;
+  }
+  .footer #contact-me {
+    display: flex;
+  }
+  .footer .social {
+    color: #f2f2f2;
+    padding-right: 40%; /* Add some padding to the right */
+    padding-top: 40px;
+  }
+  .carousel-inner img {
+    height: 10%;
+  }
+  .slide {
+    width: 100%; /* Full width for each slide */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    transition: transform 1s ease;
+  }
+  .slide img {
+    height: 500px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    padding: 0; /* Remove padding */
+  }
+  .iframe {
+    padding-left: 5%;
+    width: 90%; /* Flexible width for responsiveness */
+    max-width: 1000px; /* Set a maximum width */
+    padding-top: 2%;
+    border: none;
+    height: 500px; /* Adjust height */
+    margin-bottom: 50px; /* Ensure there's enough space before the footer */
+  }
+  .slides {
+    display: flex;
+    width: 400%; /* Adjust based on the number of slides (100% per slide) */
+    transition: transform 1s ease;
+  }
+  /* Add background image to this section */
+  .section1 {
+    background-image: url('https://img.freepik.com/free-vector/gradient-wave-background-template-design_483537-5245.jpg?w=1380&t=st=1726856828~exp=1726857428~hmac=e838308061c61f4012fca70b5e357d20a9e8ff70ceab518f2efdcb2f8021a70d');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    z-index: 1; /* Ensure slides stay below the navbar */
+    position: relative; /* Add this to control z-index */
+  }
+  /* Optional: Darken the background for better contrast */
+  .section1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+    z-index: -1; /* Make sure it stays behind the content */
+  }
+</style>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Squid Game</a>
+  <a href="healer.html">Healer</a>
+  <a href="business_proposal.html">Business Proposal</a>
+</div>
+
+<div class ="section1">
+  <div style="display: flex; justify-content: center; padding-top: 1%"><h1 style="color: white">K-Dramas in my Wishlist</h1></div>
+  <div class="slider" style="width: 100%; overflow: hidden; position: relative;">
+    <div class="slides">
+      <div class="slide"><img src="https://i.pinimg.com/736x/a2/73/94/a273947d633a743cb5813eb7513c5213.jpg" alt="Business Proposal"></div>
+      <div class="slide"><img src="https://i.pinimg.com/550x/f5/b8/fb/f5b8fbde6798c058717c26aaddfa5ba8.jpg" alt="Business Propoal"></div>
+      <div class="slide"><img src="https://i.pinimg.com/originals/be/9e/38/be9e3875ef166b0e23764de49ae67165.jpg" alt="Business Proposal"></div>
+    </div>
+  </div>
+  <iframe class="iframe" src="https://asianwiki.com/Business_Proposal"></iframe>
+</div>
+
+<div class="footer">
+  <div class="contact_us">
+    <p id="contact-me"><h2>Contact Us:</h2></p>
+    <div class="email"><p>amnagcsp37@gmail.com</p><img src="https://cdn-icons-png.freepik.com/256/552/552486.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="40"></div>
+    <div class="phone"><p>+92 123456789</p><img src="https://cdn-icons-png.freepik.com/256/16076/16076069.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30"></div>
+  </div>
+  <div class="social">
+    <p><h2>Social Links:</h2></p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/_amna__batool/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+      <a href="https://www.facebook.com/amna.batool.3785373" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/5968/5968764.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const slideCount = document.querySelectorAll('.slide').length;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    slides.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`
+  }
+
+  setInterval(nextSlide, 3000);
+</script>
+
+</body>
+</html>
